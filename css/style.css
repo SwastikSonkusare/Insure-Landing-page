@@ -105,6 +105,38 @@ body {
     width: 100%;
     height: 100%; }
 
+.main {
+  padding: 25rem 10rem 20rem 14rem; }
+  .main__box {
+    padding-top: 4rem;
+    width: 15rem;
+    height: 1rem;
+    position: relative; }
+  .main__borderTop {
+    position: absolute;
+    border-top: 1px solid #837d87;
+    top: 0;
+    width: 100%; }
+  .main__heading {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 7rem; }
+  .main__container {
+    display: flex; }
+    .main__container--col {
+      max-width: 39rem;
+      margin-right: 3rem; }
+    .main__container--heading {
+      font-family: 'DM Serif Display', serif;
+      font-weight: 400;
+      font-size: 2.8rem; }
+    .main__container--paragraph {
+      font-family: "karla", sans-serif;
+      font-weight: 700;
+      font-size: 1.7rem;
+      line-height: 1.7;
+      color: #837d87; }
+
 .mb-sm {
   margin-bottom: 1rem; }
 
@@ -115,7 +147,7 @@ body {
   margin-bottom: 3rem; }
 
 .mb-xxl {
-  margin-bottom: 4rem; }
+  margin-bottom: 6rem; }
 
 .mt-sm {
   margin-top: 1rem; }
@@ -127,4 +159,4 @@ body {
   margin-top: 3rem; }
 
 .mt-xxl {
-  margin-top: 4rem; }
+  margin-top: 6rem; }
