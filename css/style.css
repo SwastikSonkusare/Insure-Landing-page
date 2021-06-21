@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -10,4 +12,44 @@ html {
   min-height: 100vh; }
 
 body {
-  min-height: 100vh; }
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif; }
+
+.container {
+  height: 100%; }
+
+.navbar {
+  display: flex;
+  padding: 1.5rem 14rem;
+  justify-content: space-between;
+  align-items: center; }
+  .navbar__logo {
+    width: 10rem;
+    height: 1.8rem; }
+  .navbar__items {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .navbar__item {
+    text-decoration: none;
+    margin-right: 2rem; }
+  .navbar__links {
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #837d87; }
+  .navbar__button {
+    border: none;
+    padding: .8rem 2rem;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #2b272f;
+    border: 2px solid #2b272f; }
