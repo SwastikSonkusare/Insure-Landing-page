@@ -148,7 +148,7 @@ body {
 }
 
 .main {
-    padding: 25rem 10rem 20rem 14rem;
+    padding: 25rem 10rem 14rem 14rem;
 
     &__box {
         padding-top: 4rem;
@@ -193,8 +193,80 @@ body {
             color:  hsl(273, 4%, 51%);
         }
     }
+}
 
+.how-we-work {
+    margin-top: 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4.5rem 8rem;
+    background-color: hsl(256, 26%, 20%);
+    background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+    &__heading {
+        color: #fff;
+        font-family: 'DM Serif Display', serif;
+        font-weight: 400;
+        font-size: 4rem;
+    }    
+}
+
+.footer {
+    padding: 7rem 18rem;
+    background-color: hsl(0, 0%, 98%);
+    background-image: url(../images/bg-pattern-footer-desktop.svg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 40rem;
+   
+
+    &__top-section {
+        padding-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid hsl(273, 4%, 51%);
+        
+    }
+
+    &__icons {
+        &:not(:last-of-type) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__bottom-section {
+        padding-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 20rem));
+
+        &-container {
+
+        }
+    }
+
+    &__header {
+        text-transform: uppercase;
+        color:  hsl(273, 4%, 51%);
+        font-family: "karla", sans-serif;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        
+    }
     
+    &__items {
+        list-style: none;
+    }
+    
+    &__item {
+        
+        text-decoration: none;
+    }
 }
 
 
