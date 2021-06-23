@@ -19,6 +19,40 @@ body {
 .container {
   height: 100%; }
 
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40rem;
+  height: 100%;
+  transform: translate(-100%);
+  z-index: 10;
+  opacity: 0;
+  transition: all .3s ease-in-out; }
+  @media only screen and (min-width: 37.5em) {
+    .sidebar {
+      width: 100%; } }
+  .sidebar__toggle {
+    cursor: pointer;
+    text-align: end;
+    padding: 2rem; }
+
+.show-sidebar {
+  transform: translate(0);
+  background-color: bisque;
+  opacity: 1; }
+  @media only screen and (min-width: 59.25em) {
+    .show-sidebar {
+      display: none; } }
+  .show-sidebar .navbar__items {
+    display: grid;
+    grid-template-rows: repeat(4, 0.5fr);
+    row-gap: 3rem;
+    text-align: center;
+    padding: 8rem 0; }
+  .show-sidebar .navbar__item:hover {
+    transform: translateY(-3px); }
+
 .navbar {
   display: flex;
   padding: 1.5rem 14rem;
@@ -27,14 +61,24 @@ body {
   .navbar__logo {
     width: 10rem;
     height: 1.8rem; }
+  .navbar__hamburger {
+    display: none;
+    cursor: pointer; }
+    @media only screen and (max-width: 59.25em) {
+      .navbar__hamburger {
+        display: block; } }
   .navbar__items {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media only screen and (max-width: 59.25em) {
+      .navbar__items {
+        display: none; } }
   .navbar__item {
     text-decoration: none;
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    transition: all .4s ease-out; }
   .navbar__links {
     text-decoration: none;
     font-size: 1.6rem;
